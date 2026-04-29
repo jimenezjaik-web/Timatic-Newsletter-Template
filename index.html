@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="https://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+    <meta charset="utf-8" />
+    <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <title>IATA Timatic Newsletter</title>
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <style>
+      :root {
+        color-scheme: light dark;
+        supported-color-schemes: light dark;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .body {
+          background-color: #172430 !important;
+          color: #ffffff !important;
+        }
+
+        a {
+          color: #F9C732 !important;
+        }
+
+        a:hover {
+          color: #EF4632 !important;
+        }
+
+        .dark-mode-bg {
+          background: #000000 !important;
+          background-color: #000000 !important;
+        }
+
+        .dark-mode-blue-bg {
+          background: #1e32fa !important;
+          background-color: #1e32fa !important;
+        }
+
+        .dark-mode-wrapper-header,
+        .dark-mode-wrapper-header table {
+          background: #000000 !important;
+          background-color: #000000 !important;
+        }
+
+        .dark-mode-wrapper,
+        .dark-mode-wrapper table {
+          background: #000000 !important;
+          background-color: #000000 !important;
+        }
+
+        .dm-call-out-section,
+        .dm-call-out-section table {
+          background: #171717 !important;
+          background-color: #171717 !important;
+        }
+
+        .dm-call-out-section-col table table table {
+          background: #171717 !important;
+          background-color: #171717 !important;
+        }
+
+        .dm-white-text,
+        .dm-white-text div {
+          color: #ffffff !important;
+        }
+
+        .dm-yellow-text,
+        .dm-yellow-text div {
+          color: #F9C732 !important;
+        }
+
+        .dm-red-text,
+        .dm-red-text div {
+          color: #f04632 !important;
+        }
+
+        .dm-iata-button a {
+          color: #ffffff !important;
+        }
+
+        .dm-call-out-text {
+          background: #171717 !important;
+          color: #ffffff !important;
+        }
+
+        .dm-yellow-bg,
+        .dm-footer-bg table {
+          background: #F9C732 !important;
+          background-color: #F9C732 !important;
+        }
+
+        .dm-footer-bg,
+        .dm-footer-bg table {
+          background: #171717 !important;
+          background-color: #171717 !important;
+        }
+
+        .link-color-bg {
+          color: #1E32FA !important;
+        }
+
+        .link-color-bg:hover {
+          color: #ffffff !important;
+        }
+
+        .lightimage {
+          display: none !important;
+        }
+
+        .darkimageWrapper,
+        .darkimage {
+          display: block !important;
+        }
+      }
+    </style>
+    <!-- CSS Reset : START -->
+    <style>
+      /* What it does: Remove spaces around the email design added by some email clients. */
+      /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+      html,
+      body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+      }
+
+      /* What it does: Stops email clients resizing small text. */
+      * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      /* What it does: Centers email on Android 4.4 */
+      div[style*="margin: 16px 0"] {
+        margin: 0 !important;
+      }
+
+      /* What it does: Stops Outlook from adding extra spacing to tables. */
+      table,
+      td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+      }
+
+      /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+      table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        table-layout: fixed !important;
+        margin: 0 auto !important;
+      }
+
+      table table table {
+        table-layout: auto;
+      }
+
+      th {
+        font-weight: normal;
+      }
+
+      a {
+        color: #1e32fa;
+      }
+
+      /* What it does: Uses a better rendering method when resizing images in IE. */
+      img {
+        border: 0;
+        height: auto;
+        line-height: 100%;
+        outline: none;
+        text-decoration: none;
+        -ms-interpolation-mode: bicubic;
+      }
+
+      .display-mobile {
+        display: none !important;
+      }
+
+      .non-display-mobile {
+        display: block !important;
+        max-height: none !important;
+        width: auto !important;
+      }
+
+      /* What it does: A work-around for email clients meddling in triggered links. */
+      *[x-apple-data-detectors],
+      /* iOS */
+      .unstyle-auto-detected-links *,
+      .aBn {
+        border-bottom: 0 !important;
+        cursor: default !important;
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+
+      /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+      .a6S {
+        display: none !important;
+        opacity: 0.01 !important;
+      }
+
+      /* If the above doesn't work, add a .g-img class to any image in question. */
+      img.g-img+div {
+        display: none !important;
+      }
+
+      /* What it does: Prevents underlining the button text in Windows 10 */
+      .button-link {
+        text-decoration: none !important;
+      }
+
+      a img {
+        border: none;
+      }
+
+      /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+      /* Create one of these media queries for each additional viewport size you'd like to fix */
+      /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+      @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+        .email-container {
+          min-width: 320px !important;
+        }
+      }
+
+      /* iPhone 6, 6S, 7, 8, and X */
+      @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+        .email-container {
+          min-width: 375px !important;
+        }
+      }
+
+      /* iPhone 6+, 7+, and 8+ */
+      @media only screen and (min-device-width: 414px) {
+        .email-container {
+          min-width: 414px !important;
+        }
+      }
+    </style>
+    <!-- CSS Reset : END -->
+    <!-- Reset list spacing because Outlook ignores much of our inline CSS. -->
+    <!--[if mso]>
+		<style type="text/css">
+        ul,
+        ol {
+        	margin: 0 !important;
+        }
+        li {
+        	margin-left: 30px !important;
+        }
+        li.list-item-first {
+        	margin-top: 0 !important;
+        }
+        li.list-item-last {
+        	margin-bottom: 10px !important;
+        }
+      </style>
+		<![endif]-->
+    <!-- Progressive Enhancements : START -->
+    <style>
+      /* What it does: Hover styles for buttons */
+      .button-td,
+      .button-a {
+        transition: all 100ms ease-in;
+      }
+
+      /* Media Queries */
+      @media screen and (max-width: 600px) {
+        .email-container {
+          width: 100% !important;
+          margin: auto !important;
+        }
+
+        .display-mobile {
+          overflow: visible !important;
+          float: none !important;
+          display: block !important;
+          line-height: 100% !important;
+        }
+
+        .non-display-mobile {
+          display: none !important;
+          max-height: none !important;
+          width: auto !important;
+        }
+
+        /* What it does: Forces elements to resize to the full width of their container. Useful for resizing images beyond their max-width. */
+        .fluid {
+          max-width: 100% !important;
+          height: auto !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+
+        /* What it does: Forces table cells into full-width rows. */
+        .stack-column,
+        .stack-column-center {
+          display: block !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          direction: ltr !important;
+        }
+
+        .third-stack-column-center {
+          width: 33.33%;
+          display: inline-block;
+          text-align: center;
+        }
+
+        .half-stack-column-center {
+          width: 50%;
+          display: inline-block;
+          text-align: center;
+        }
+
+        /* And center justify these ones. */
+        .stack-column-center {
+          text-align: center !important;
+        }
+
+        /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+        .center-on-narrow {
+          text-align: center !important;
+          display: block !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+          float: none !important;
+        }
+          
+        .no-center-on-narrow {
+          text-align: left !important;
+          display: block !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+          float: none !important;
+        }
+
+        table.center-on-narrow {
+          display: inline-block !important;
+        }
+
+        /* What it does: Adjust typography on small screens to improve readability */
+        .email-container p {
+          /*font-size: 16px !important;*/
+        }
+
+        .email-container p.footer {
+          /*font-size: 11px !important;*/
+        }
+
+        .spacer {
+          height: 0 !important;
+          width: 0 !important;
+          display: none !important;
+        }
+
+        .padding-mobile {
+          padding-bottom: 15px !important;
+        }
+
+        .display-mobile {
+          overflow: visible !important;
+          float: none !important;
+          display: block !important;
+          line-height: 100% !important;
+        }
+
+        .non-display-mobile {
+          display: none !important;
+        }
+
+        .full-width-img img {
+          width: 100% !important;
+          max-width: 600px !important;
+          height: auto !important;
+        }
+      }
+    </style>
+    <!-- Progressive Enhancements : END -->
+    <!--[if (mso)|(mso 16)]>
+		<style type="text/css">
+        a {text-decoration: none;}
+      </style>
+		<![endif]-->
+    <!--[if (mso)|(mso 9)]>
+		<style type="text/css">
+        a {text-decoration: none;}
+      </style>
+		<![endif]-->
+    <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
+    <!--[if gte mso 9]>
+		<xml>
+			<o:OfficeDocumentSettings>
+				<o:AllowPNG />
+				<o:PixelsPerInch>96</o:PixelsPerInch>
+			</o:OfficeDocumentSettings>
+		</xml>
+		<![endif]-->
+    <!--[if mso]>
+		<noscript>
+			<xml>
+				<o:OfficeDocumentSettings>
+					<o:AllowPNG />
+					<o:PixelsPerInch>96</o:PixelsPerInch>
+				</o:OfficeDocumentSettings>
+			</xml>
+		</noscript>
+		<![endif]-->
+  </head>
+  <body width="100%" style="margin: 0; mso-line-height-rule: exactly; background-color: #ebeff2;">
+<div style="display:none;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">Timatic Newsletter</div>
+<!-- Insert &zwnj;&nbsp; hack after hidden preview text -->
+
+<div style="display: none; max-height: 0px; overflow: hidden;">&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌</div>
+
+<div class="dark-mode-bg" style="width: 100%; text-align: left;"><!-- Pre-Header : START -->
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="email-container" style="margin: auto; background-color: #ebeff2;" width="600">
+	<tbody>
+		<tr>
+			<td align="center" class="dark-mode-wrapper dm-white-text" style="padding: 15px 30px; font-size: 8pt; color: #333333; border-collapse: collapse; font-family: sans-serif; background-color: #ebeff2;" width="100%">Timatic Newsletter<br>
+			View this e-mail in your <a href="{{View_Online}}" style="text-decoration: underline; color:#1e32fa;">web browser</a></td>
+		</tr>
+	</tbody>
+</table>
+<!-- Pre-Header : START --><!-- Email Body : START -->
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="email-container dark-mode-bg" style="margin: auto;" width="600">
+	<tbody><!-- Logo + Share this email DARK MODE FRIENDLY : START -->
+		<tr>
+			<td align="center" class="dark-mode-wrapper" style="padding: 15px 20px; background-color: white" valign="top">
+			<table border="0" cellpadding="0" cellspacing="0" width="100%">
+				<tbody>
+					<tr><!-- Column 1 : START -->
+						<td valign="middle">
+						<table border="0" cellpadding="0" cellspacing="0" width="100%">
+							<tbody>
+								<tr>
+									<td class="center-on-narrow" style="text-align: left;"><a href="https://www.iata.org?utmfill" target="_blank"><img alt="IATA" class="lightimage" src="https://go.updates.iata.org/l/123902/2022-11-07/hx93cq/123902/1667856462oMzTiY3r/IATA_logo.png" style="display: block; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; margin: 0; -webkit-filter: drop-shadow(5px 5px 5px #ffffff); filter: drop-shadow(5px 5px 5px #ffffff);" width="85"> </a>
+
+									<div class="darkimageWrapper" style="mso-hide: all; display: none"><img alt="IATA" class="darkimage" src="https://go.updates.iata.org/l/123902/2021-04-20/8mchs6/123902/1618947617pMUEWmle/IATA_White_logo.png" style="display: none; outline: none; text-decoration: none; margin: 0;" width="85"></div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+						<!-- Column 1 : END --><!-- Column 2 : START -->
+						<td valign="middle">
+						<table border="0" cellpadding="0" cellspacing="0" width="100%">
+							<tbody>
+								<tr>
+									<td style="font-family: sans-serif; color: #1e32fa; font-size: 12px; line-height: 16px; padding: 0 10px; text-align: right;" class="">
+									<p style="margin: 0;"><a href="{{AddThis_URL_Email}}" style="text-decoration: none;" target="_blank" title="Share this email">Share this email</a></p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+						<!-- Column 2 : END -->
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<!-- Logo + Share this email DARK MODE FRIENDLY : END --><!-- HEADER : START -->
+		<tr>
+			<td align="center" class="full-width-img dark-mode-bg" style="background-color: #ffffff; padding: 0px 0px; margin: 0; line-height: 0;">
+			<table border="0" cellpadding="0" cellspacing="0">
+				<tbody><!-- Responsive Header : START --><!-- Desktop : START -->
+					<tr>
+						<td align="center" class="non-display-mobile dark-mode-bg" valign="top" width="100%">
+						<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+							<tbody>
+								<tr>
+									<th class="stack-column-center" valign="middle" width="100%"><img alt="Timatic Newsletter" height="auto" src="https://go.updates.iata.org/l/123902/2023-04-07/j1s7xx/123902/1680886617wg9dmKh5/header.png" style="width: 600px; -ms-interpolation-mode: bicubic;" width="600"></th>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+					<!-- Desktop : END --><!--[if !mso]><\!--><!-- Mobile : START -->
+					<tr>
+						<td align="center" class="display-mobile dark-mode-bg" style="overflow: hidden; float: left; display: none; line-height: 0px;" valign="top" width="100%">
+						<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+							<tbody>
+								<tr>
+									<th class="stack-column-center" valign="middle" width="100%"><img alt="Timatic Newsletter" border="0" class="center-on-narrow" height="auto" src="https://go.updates.iata.org/l/123902/2023-04-07/j1s7xt/123902/1680886617hvqHyj3a/header_mobile.png" style="width: 600px; -ms-interpolation-mode: bicubic;" width="600"></th>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+					<!-- Mobile : END --><!-- 
+									<![endif]--><!-- Responsive Header : END -->
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<!-- HEADER : END --><!-- Intro Text : START -->
+		<tr>
+			<td class="dark-mode-wrapper" style="padding: 20px 30px 30px; font-family: sans-serif; font-size: 14px; line-height: 16px; color: #000000; background-color: #ffffff;">
+			<p class="dm-white-text" style="margin: 0;">Dear {{Recipient.FirstName}} ,<br>
+			<br>
+			We’re excited to share with you some latest highlights on air travel documents, from regional updates concerning Europe and Middle East, to the latest about COVID-19 restrictions. We hope you’ll find this newsletter interesting!</p>
+			</td>
+		</tr>
+		<!-- Intro Text : END --><!-- Full Width Banner : START -->
+		<tr>
+			<td align="center" class="dark-mode-wrapper" style="background-color: #ffffff; padding: 0px 30px;"><a href="https://www.schengenvisainfo.com/news/eu-postpones-launch-of-etias-to-2024/" target="_blank"><img align="center" alt="ETIAS" border="0" class="g-img" src="https://go.updates.iata.org/l/123902/2023-04-07/j1s7yb/123902/1680888181uZsl2zkW/full_width_01.png" style="width: 540px; max-width: 100%; margin: 0; -ms-interpolation-mode: bicubic;" width="540"></a></td>
+		</tr>
+		<!-- Full Width Banner : END --><!-- Header 3 + Text : START -->
+		<tr>
+			<td class="dark-mode-wrapper" style="padding: 10px 30px; font-family: sans-serif; font-size: 14px; line-height: 16px; color: #000000; background-color: #ffffff;">
+			<h3 class="dm-white-text" style="margin: 0 0 10px; font-size: 18px; line-height: 125%; color: #000000;">Latest updates on ETIAS</h3>
+
+			<p class="dm-white-text" style="margin: 0;">ETIAS (European Travel Information and Authorisation System) is expected to be operational in 2024. The ETIAS system will apply to visa exempt non-EU nationals traveling to Schengen Member States, Bulgaria and Romania. Visa exempt non-EU nationals must complete an online application and obtain travel authorization before their flight. Overall, the ETIAS will enhance security measures and streamline the travel process for visa-exempt travelers.</p>
+			</td>
+		</tr>
+		<!-- Header 3 + Text : END --><!-- Blue CTA : START -->
+		<tr>
+			<td class="dark-mode-bg" style="font-family: sans-serif; font-size: 14px; line-height: 125%; color: #000000; padding: 10px 30px 30px; text-align: left; background-color: #ffffff"><a href="https://www.schengenvisainfo.com/news/eu-postpones-launch-of-etias-to-2024/" target="_blank"><img alt="READ MORE" height="34" src="https://go.updates.iata.org/l/123902/2023-04-07/j1s7y1/123902/1680886952sn28ckuz/READ_MORE.png" style="width: 125px; height: 34px; display: block; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; margin: 0; text-align: left;" width="125"> </a></td>
+		</tr>
+		<!-- Blue CTA : END --><!-- Full Width Banner : START -->
+		<tr>
+			<td align="center" class="dark-mode-wrapper" style="background-color: #ffffff; padding: 0px 30px;"><a href="https://www.iatatravelcentre.com/world.php" target="_blank"><img align="center" alt="ETIAS" border="0" class="g-img" src="https://go.updates.iata.org/l/123902/2023-04-07/j1s7yj/123902/1680888181RfUHu0vo/full_width_02.png" style="width: 540px; max-width: 100%; margin: 0; -ms-interpolation-mode: bicubic;" width="540"></a></td>
+		</tr>
+		<!-- Full Width Banner : END --><!-- Header 3 + Text : START -->
+		<tr>
+			<td class="dark-mode-wrapper" style="padding: 10px 30px; font-family: sans-serif; font-size: 14px; line-height: 16px; color: #000000; background-color: #ffffff;">
+			<h3 class="dm-white-text" style="margin: 0 0 10px; font-size: 18px; line-height: 125%; color: #000000;">COVID-19 restrictions as of today</h3>
+
+			<p class="dm-white-text" style="margin: 0;">As we continue to move into pre-pandemic travel and the rapid removal of COVID-19 restrictions for passengers arriving from China (including Hong Kong and Macao), Europe is the region with the highest number of countries without any travel restrictions, while Africa is the region with the highest number of countries which are still partially restrictive. These countries either require proof of vaccination or a negative COVID-19 test result. A handful of countries still advise that traveling passengers could be subjected to quarantine or medical screening upon arrival.</p>
+			</td>
+		</tr>
+		<!-- Header 3 + Text : END --><!-- Blue CTA : START -->
+		<tr>
+			<td class="dark-mode-bg" style="font-family: sans-serif; font-size: 14px; line-height: 125%; color: #000000; padding: 10px 30px 30px; text-align: left; background-color: #ffffff"><a href="https://www.iatatravelcentre.com/world.php" target="_blank"><img alt="READ MORE" height="34" src="https://go.updates.iata.org/l/123902/2023-04-07/j1s7y1/123902/1680886952sn28ckuz/READ_MORE.png" style="width: 125px; height: 34px; display: block; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; margin: 0; text-align: left;" width="125"> </a></td>
+		</tr>
+		<!-- Blue CTA : END --><!-- Full Width Banner : START -->
+		<tr>
+			<td align="center" class="dark-mode-wrapper" style="background-color: #ffffff; padding: 0px 30px;"><a href="#?utmfill" target="_blank"><img align="center" alt="ETIAS" border="0" class="g-img" src="https://go.updates.iata.org/l/123902/2023-04-07/j1s7ym/123902/1680888181shoBig2K/full_width_03.png" style="width: 540px; max-width: 100%; margin: 0; -ms-interpolation-mode: bicubic;" width="540"></a></td>
+		</tr>
+		<!-- Full Width Banner : END --><!-- Header 3 + Text : START -->
+		<tr>
+			<td class="dark-mode-wrapper" style="padding: 10px 30px 30px; font-family: sans-serif; font-size: 14px; line-height: 16px; color: #000000; background-color: #ffffff;">
+			<h3 class="dm-white-text" style="margin: 0 0 10px; font-size: 18px; line-height: 125%; color: #000000;">Summer holidays are coming soon – What should your customers start thinking about?</h3>
+
+			<p class="dm-white-text" style="margin: 0;"><b>a. Check for visa requirements:</b> Check the visa requirements for the destination country and apply in advance if needed.<br>
+			<b>b. Keep documents up to date:</b> Check the expiration date of passport or identity card and make sure it is valid for the duration of the trip. Some countries may require a passport to be valid for at least 6 months from the arrival date.<br>
+			<b>c. Follow COVID-19 protocols:</b> Depending on the destination and country of origin, travelers may need to follow specific COVID-19 protocols, such as providing a negative test result or proof of vaccination.</p>
+			</td>
+		</tr>
+		<!-- Header 3 + Text : END --><!-- Full Width Banner : START --><!-- Full Width Banner : END --><!-- Header 3 + Text : START --><!-- Header 3 + Text : END --><!-- Blue CTA : START --><!-- Blue CTA : END --><!-- 2 Columns : START -->
+		<tr>
+			<td align="center" class="dark-mode-wrapper" style="padding: 0px 30px 0px; background-color: #ffffff;" valign="top">
+			<table border="0" cellpadding="0" cellspacing="0" width="100%">
+				<tbody>
+					<tr><!-- Column 1 : START -->
+						<td class="stack-column-center" valign="top">
+						<table border="0" cellpadding="0" cellspacing="0" width="100%">
+							<tbody>
+								<tr>
+									<td style="font-family: sans-serif; font-size: 14px; line-height: 125%; color: #000000; text-align: left;" class=""><a href="https://www.gulf-times.com/article/654435/qatar/moi-announces-validity-extension-of-hayya-card-for-fans-and-organisers" target="_blank"><img alt="" src="https://go.updates.iata.org/l/123902/2023-04-07/j1s81b/123902/1680892994ZN6GPsyr/half_width_01.png" style="margin: 0; text-align: left; -ms-interpolation-mode: bicubic; width: 250px; max-width: 100%;" width="250"></a></td>
+								</tr>
+								<tr>
+									<td style="font-family: sans-serif; font-size: 14px; line-height: 125%; color: #000000; padding: 10px 0px; text-align: left;" class="">
+									<p class="dm-white-text" style="margin: 0;"><span class="dm-white-text" style="font-family: sans-serif; font-size: 18px; font-weight: bold; line-height: 125%; color: #000000; text-align: left;">Traveling to Qatar with a Hayya Entry Permit</span><br>
+									<br>
+									Visitors with a Hayya Entry Permit (fans and organizers) for the Qatar FIFA World Cup 2022 can enter Qatar without a visa until 10 January 2024. They need proof of confirmed accommodation, health insurance for their stay, a round-trip ticket, and a passport valid for at least 3 months. Hayya Card holders will have access to the "Hayya with Me" feature.<br>
+									<br>
+									&nbsp;</p>
+									</td>
+								</tr>
+								<tr>
+									<td style="font-family: sans-serif; font-size: 14px; line-height: 125%; color: #000000; padding: 10px 0px 30px; text-align: left;" class=""><a href="https://www.gulf-times.com/article/654435/qatar/moi-announces-validity-extension-of-hayya-card-for-fans-and-organisers" target="_blank"><img alt="READ MORE" height="34" src="https://go.updates.iata.org/l/123902/2023-04-07/j1s7y1/123902/1680886952sn28ckuz/READ_MORE.png" style="width: 125px; height: 34px; display: block; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; margin: 0; text-align: left;" width="125"> </a></td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+						<!-- Column 1 : END -->
+						<td class="spacer" width="20">&nbsp;</td>
+						<!-- Column 2 : START -->
+						<td class="stack-column-center" valign="top">
+						<table border="0" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td style="font-family: sans-serif; font-size: 14px; line-height: 125%; color: #000000; text-align: left;" class=""><a href="https://travelobiz.com/gaca-allows-umrah-pilgrims-to-use-any-international-airport-in-saudi-arabia/" target="_blank"><img alt="" src="https://go.updates.iata.org/l/123902/2023-04-07/j1s7yx/123902/1680889256yYiH50ZZ/half_width_01.png" style="margin: 0; text-align: left; -ms-interpolation-mode: bicubic; width: 250px; max-width: 100%;" width="250"></a></td>
+								</tr>
+								<tr>
+									<td style="font-family: sans-serif; font-size: 14px; line-height: 125%; color: #000000; padding: 10px 0px; text-align: left;" class="">
+									<p class="dm-white-text" style="margin: 0;"><span class="dm-white-text" style="font-family: sans-serif; font-size: 18px; font-weight: bold; line-height: 125%; color: #000000; text-align: left;">Umrah pilgrims traveling to Saudi Arabia</span><br>
+									<br>
+									Umrah is a pilgrimage to Mecca, Saudi Arabia, performed by Muslims at any time of the year except during the Hajj season. It is also known as the “minor pilgrimage”. Typically, Umrah passengers must obtain an Umrah visa and arrive at one of the designated airports in Saudi Arabia. Recently, authorities in Saudi Arabia have announced that all Umrah passengers are to be allowed to enter any international airport in Saudi Arabia.</p>
+									</td>
+								</tr>
+								<tr>
+									<td style="font-family: sans-serif; font-size: 14px; line-height: 125%; color: #000000; padding: 10px 0px 30px; text-align: left;" class=""><a href="https://travelobiz.com/gaca-allows-umrah-pilgrims-to-use-any-international-airport-in-saudi-arabia/" target="_blank"><img alt="READ MORE" height="34" src="https://go.updates.iata.org/l/123902/2023-04-07/j1s7y1/123902/1680886952sn28ckuz/READ_MORE.png" style="width: 125px; height: 34px; display: block; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; margin: 0; text-align: left;" width="125"> </a></td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+						<!-- Column 2 : END -->
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<!-- 2 Columns : START -->
+        
+        <!-- Yellow line : START -->
+		<tr>
+			<td align="center" class="dark-mode-wrapper" style="padding: 0 30px; background-color: #ffffff;" valign="top">
+			<table border="0" cellpadding="0" cellspacing="0" width="100%">
+				<tbody>
+					<tr>
+						<td style="border-bottom: 3px solid #FAC832;" valign="top" width="100%" class="">&nbsp;</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<!-- Yellow line : END --><!-- Header 3 + Text : START -->
+		<tr>
+			<td class="dark-mode-wrapper" style="padding: 30px 30px; font-family: sans-serif; font-size: 14px; line-height: 16px; color: #000000; text-align: center; background-color: #ffffff;">
+			<h3 class="dm-white-text" style="margin: 0 0 15px; font-size: 18px; line-height: 125%; color: #000000;">How we can help</h3>
+
+			<p class="dm-white-text" style="margin: 0;">Timatic is the most trusted source of real-time information on travel document requirements for international air travel. By providing easy access to accurate information, Timatic helps to ensure that the entire travel industry and travelers are well-informed about necessary travel regulations and requirements.<br>
+			<br>
+			Through fully automated document compliance checks, Timatic helps airlines and ground handlers avoid immigration fines, minimize training requirements for staff, reduce costs, and ultimately provide a seamless travel experience for passengers.</p>
+			</td>
+		</tr>
+		<!-- Header 3 + Text : END --><!-- Yellow CTA : START -->
+		<tr>
+			<td class="dark-mode-wrapper" style="background-color: #ffffff; padding: 0px 30px 30px;">
+			<table border="0" cellpadding="0" cellspacing="0" width="100%">
+				<tbody>
+					<tr>
+						<td style="font-family: sans-serif;"><!-- Button : START -->
+						<table align="center" border="0" cellpadding="0" cellspacing="0" width="205">
+							<tbody>
+								<tr>
+									<td height="42" style="text-align: center; display: inline-block;" class=""><a href="https://www.iata.org/timatic/" target="_blank"><img alt="EXPLORE MORE" height="42" src="https://go.updates.iata.org/l/123902/2023-04-07/j1s7z7/123902/1680890335YLlZuuDG/EXPLORE_MORE.png" style="width: 205px; height: 42px; display: block; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; margin: 0;" width="205"> </a></td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- Button : END --></td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<!-- Yellow CTA : END --><!-- Footer : START -->
+		<tr>
+			<td class="dm-footer-bg" style="background-color: #000000; padding: 30px 30px;">
+			<table border="0" cellpadding="0" cellspacing="0" width="100%">
+				<tbody>
+					<tr>
+						<td align="center" style="color: #ffffff; text-align: center; font-family: sans-serif; font-size: 12px; color: #ffffff;" valign="top">
+						<table border="0" cellpadding="0" cellspacing="0" width="100%">
+							<tbody>
+								<tr><!-- Column 1 : START -->
+									<th class="stack-column-center" style="text-align: center; padding: 0 0 15px;" valign="middle" width="70%">
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tbody>
+											<tr><!-- Column 1 : START -->
+												<td valign="middle" width="50%">
+												<table border="0" cellpadding="0" cellspacing="0" style="float: left;">
+													<tbody>
+														<tr>
+															<td class=""><img alt="Subscription Icon" height="23" src="https://go.updates.iata.org/l/123902/2019-02-20/82vzz5/123902/281186/ManageSubscription_Icon.png" width="23"></td>
+															<td style="padding: 0 15px; font-family: sans-serif; font-size: 12px;" class="">
+															<p style="margin: 0;"><a href="{{EmailPreferenceCenter_340}}" style="color: #ffffff; text-decoration: none;" target="_blank" title="Manage Subscriptions">Manage subscriptions</a></p>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+												<!-- Column 1 : END --><!-- Column 2 : START -->
+												<td valign="middle" width="50%">
+												<table border="0" cellpadding="0" cellspacing="0">
+													<tbody>
+														<tr>
+															<td class=""><img alt="Share Icon" height="20" src="https://go.updates.iata.org/l/123902/2019-02-20/82vzz3/123902/281182/ShareThisEmail_Icon.png" width="13"></td>
+															<td style="padding: 0 15px; font-family: sans-serif; font-size: 12px;" class="">
+															<p style="margin: 0;"><a href="{{AddThis_URL_Email}}" style="color: #ffffff; text-decoration: none;" target="_blank" title="Share this email">Share this email</a></p>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+												<!-- Column 2 : END -->
+											</tr>
+										</tbody>
+									</table>
+									</th>
+									<!-- Column 1 : END --><!-- Column 2 : START -->
+									<th class="stack-column-center" style="padding: 0 0 15px;" valign="middle" width="30%">
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tbody>
+											<tr>
+												<td class="center-on-narrow" style="padding: 0; text-align: right;"><a href="https://www.twitter.com/iata" style="text-decoration: none;" target="_blank" title="Twitter"><img alt="Twitter" height="22" src="https://go.updates.iata.org/l/123902/2022-10-27/hqcv82/123902/1666928491DeUMkkLc/twitter.png" style="display: inline-block; -ms-interpolation-mode: bicubic;" width="22">&nbsp; </a> <a href="https://www.facebook.com/iata.org/" style="text-decoration: none;" target="_blank" title="Facebook"> <img alt="Facebook" height="22" src="https://go.updates.iata.org/l/123902/2022-10-27/hqcv88/123902/1666928491S8lMt5g4/facebook.png" style="display: inline-block; -ms-interpolation-mode: bicubic;" width="22">&nbsp; </a> <a href="https://www.instagram.com/iata_official/?hl=en" style="text-decoration: none;" target="_blank" title="Instagram"> <img alt="Instagram" height="22" src="https://go.updates.iata.org/l/123902/2022-10-27/hqcv85/123902/1666928491A48uOauQ/instagram.png" style="display: inline-block; -ms-interpolation-mode: bicubic;" width="22">&nbsp; </a> <a href="https://www.linkedin.com/company/international-air-transport-association-iata/" style="text-decoration: none;" target="_blank" title="LinkedIn"> <img alt="LinkedIn" height="22" src="https://go.updates.iata.org/l/123902/2022-10-27/hqcv8c/123902/1666928491jlEPQHtR/linkedin.png" style="display: inline-block; -ms-interpolation-mode: bicubic;" width="22">&nbsp; </a> <a href="https://www.youtube.com/@IATAtv" style="text-decoration: none;" target="_blank" title="YouTube"> <img alt="YouTube" height="22" src="https://go.updates.iata.org/l/123902/2022-10-27/hqcv8g/123902/1666928491ZwzC4992/youtube.png" style="display: inline-block; -ms-interpolation-mode: bicubic;" width="22"> </a></td>
+											</tr>
+										</tbody>
+									</table>
+									</th>
+									<!-- Column 2 : END -->
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+					<tr>
+						<td style="font-family: sans-serif; font-size: 24px; color: #ffffff; padding: 15px 0;" class="">
+						<p style="margin: 0;">We represent, lead and serve the airline industry</p>
+						</td>
+					</tr>
+					<tr>
+						<td style="font-family: sans-serif; font-size: 12px; color: #ffffff;" class=""><a href="https://www.iata.org/about/Pages/index.aspx?utmfill" style="color: #ffffff; text-decoration: none; margin-right: 5px;" target="_blank">About Us</a> | <a href="https://www.iata.org/en/programs?utmfill" style="color: #ffffff; text-decoration: none; margin: 0 5px;" target="_blank">Programs &amp; Policy</a> | <a href="https://www.iata.org/services/Pages/index.aspx?utmfill" style="color: #ffffff; text-decoration: none; margin: 0 5px;" target="_blank">Services</a> | <a href="https://www.iata.org/training/Pages/index.aspx?utmfill" style="color: #ffffff; text-decoration: none; margin: 0 5px;" target="_blank">Training</a> | <a href="https://www.iata.org/events/Pages/index.aspx?utmfill" style="color: #ffffff; text-decoration: none; margin: 0 5px;" target="_blank">Events</a> | <a href="https://www.iata.org/pressroom/Pages/index.aspx?utmfill" style="color: #ffffff; text-decoration: none; margin-left: 5px;" target="_blank">Pressroom</a></td>
+					</tr>
+					<tr>
+						<td style="font-family: sans-serif; font-size: 11px; color: #ffffff; padding: 15px 0 0;" class="">
+						<p style="margin: 0;">IMPORTANT PRIVACY INFORMATION. The International Air Transport Association (IATA) does not sell or rent your email address to any third party. You received this email message due to your membership, participation or interest in IATA. IATA sends various communications and special announcements regarding products and services that we feel may be of interest to you. <a href="https://go.updates.iata.org/l/123902/2021-06-17/8mk3kp" style="font-size: 7px; color: #ffffff; text-decoration: none; margin: 0 5px;" target="_blank">.</a><br>
+						<br>
+						© Copyright {{{dynamic_content_1388}}}. All rights reserved.</p>
+						</td>
+					</tr>
+					<tr>
+						<td align="center" style="color: #ffffff; text-align: left;" valign="top">
+						<table border="0" cellpadding="0" cellspacing="0" width="100%">
+							<tbody>
+								<tr><!-- Column 1 : START -->
+									<th class="stack-column-center" style="padding: 15px 0 0;" valign="bottom" width="60%">
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tbody>
+											<tr>
+												<td style="font-family: sans-serif; font-size: 11px; color: #ffffff;" class="">
+												<p style="margin: 0; text-align: left;">International Air Transport Association (IATA)<br>
+												800 Square Victoria, Montreal, H4Z 1M1, Canada</p>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</th>
+									<!-- Column 1 : END --><!-- Column 2 : START -->
+									<th class="stack-column-center padding-mobile" style="padding: 15px 0 0;" valign="bottom" width="20%">
+									<table border="0" cellpadding="0" cellspacing="0">
+										<tbody>
+											<tr>
+												<td class="center-on-narrow" style="font-family: sans-serif; font-size: 12px; color: #ffffff;">
+												<p style="margin: 0;"><a href="https://www.iata.org/Pages/privacy.aspx?utmfill" style="color: #ffffff; text-decoration: none;" target="_blank" title="Privacy">Privacy</a> | <a href="https://www.iata.org/Pages/terms.aspx?utmfill" style="color: #ffffff; text-decoration: none;" target="_blank" title="Legal">Legal</a></p>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</th>
+									<!-- Column 2 : END --><!-- Column 3 : START -->
+									<th class="stack-column-center" style="text-align: right;" valign="bottom" width="20%">
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tbody>
+											<tr>
+												<td class="center-on-narrow" style="padding: 0; text-align: right;"><a href="https://www.iata.org?utmfill" target="_blank" title="IATA"><img alt="IATA" height="42" src="https://go.updates.iata.org/l/123902/2022-10-27/hqcv7k/123902/1666927387rLZdpPMS/Logo_IATA.png" style="display: inline-block; -ms-interpolation-mode: bicubic;" width="65"> </a></td>
+											</tr>
+										</tbody>
+									</table>
+									</th>
+									<!-- Column 3 : END -->
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<!-- Footer : END -->
+	</tbody>
+</table>
+<!-- Email Body : END --><!--[if mso | IE]>
+		</td>
+	</tr>
+</table>
+<![endif]--></div>
+</body>
+</html>
